@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def mergeSort(arr):
+def merge_sort(arr):
     if len(arr) > 1:
 
         # sub-divide into partitions
@@ -9,8 +9,8 @@ def mergeSort(arr):
         left = arr[:mid]  # from 0 to mid
         right = arr[mid:]  # from mid to end
 
-        mergeSort(left)
-        mergeSort(right)
+        merge_sort(left)
+        merge_sort(right)
 
         i, j, k = 0, 0, 0  # i is left, j is right, k is the original array
 
@@ -41,4 +41,4 @@ def mergeSort(arr):
 
 arr = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 print("Original array: ", arr)
-print("Sorted Array:   ", mergeSort(arr))
+print("Sorted Array:   ", merge_sort(arr))
