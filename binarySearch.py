@@ -8,6 +8,7 @@ def binary_search(list, item):
     while low <= high:
         index = (low + high) // 2
         num = list[index]
+
         if num < item:
             low = index + 1
         elif num > item:
@@ -20,5 +21,5 @@ def binary_search(list, item):
 
 test_list = [1, 3, 5, 7, 9]
 print("Original Array: ", test_list)
-print("Search for 3:   ", binary_search(test_list, 3))
+print("Search for  3:  ", binary_search(test_list, 3))
 print("Search for -1:  ", binary_search(test_list, -1))

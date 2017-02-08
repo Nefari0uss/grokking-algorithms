@@ -20,4 +20,4 @@ def selectionSort(arr):
 
 array = [5, 3, 6, 2, 10]
 print("Original Array: ", array)
-print("Sorted Array:   ", selectionSort())
+print("Sorted Array  : ", selectionSort(array))
